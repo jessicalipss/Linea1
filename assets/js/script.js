@@ -11,3 +11,12 @@
     projectItems.forEach(i => i.classList.remove('expanded'));
     projectItems[0].classList.add('expanded');
   });
+
+
+  const toggleBtn = document.getElementById('searchToggle');
+  const searchForm = document.getElementById('searchForm');
+
+  toggleBtn.addEventListener('click', () => {
+    searchForm.classList.toggle('d-none');
+  });
+
